@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">House Application</string>
+    <string name="explore_some_of_your_dream_nhomes_with_your_specifications">Explore some of your dream \nhomes with your specifications.</string>
+    <string name="find_your_ndream_home">Find Your \nDream Home</string>
+    <string name="don_t_just_get_a_nhouse_get_a_nhome">Don\'t just get a \nhouse get a \nHOME</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="log_in"><u>Log in</u></string>
+    <string name="log_in_to_your_account">Log in to your account</string>
+</resources>
