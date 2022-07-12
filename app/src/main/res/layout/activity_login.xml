@@ -15,7 +15,7 @@
         android:layout_marginBottom="40dp"
         android:text="@string/log_in_to_your_account"
         android:textColor="#273169"
-        android:textSize="32sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/tilEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -92,7 +92,7 @@
     <TextView
         android:id="@+id/tvNoAccount"
         android:layout_width="144dp"
-        android:layout_height="25dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:text="Don't have an account? "
@@ -103,7 +103,7 @@
     <TextView
         android:id="@+id/tvSignUp"
         android:layout_width="0dp"
-        android:layout_height="16dp"
+        android:layout_height="wrap_content"
         android:text="Sign up"
         android:textColor="#273169"
         app:layout_constraintBottom_toBottomOf="@+id/tvNoAccount"

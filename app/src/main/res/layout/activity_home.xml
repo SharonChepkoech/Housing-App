@@ -1,9 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:layout_marginTop="2dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginEnd="28dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textSize="22sp"
+                android:textColor="@color/tealBlue"/>
+            <TextView
+                android:id="@+id/tvOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Haus Luka"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_person_24"/>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tealBlue"
+        android:padding="16dp">
+
+<!--        <AutoCompleteTextView-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sort by"-->
+<!--            android:drawableStart="@drawable/ic_baseline_sort_24"-->
+<!--            />-->
+<!--        <AutoCompleteTextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Filter"-->
+<!--            android:drawableStart="@drawable/ic_baseline_filter_list_24"-->
+<!--            />-->
+
+        <TextView
+            android:id="@+id/tvFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Filter" />
+
+        <TextView
+            android:id="@+id/tvSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sort" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tealBlue"
+        android:layout_marginTop="50dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDisplayHouses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

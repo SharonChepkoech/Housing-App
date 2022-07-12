@@ -25,18 +25,19 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-        fun validate(){
-            var email = binding.etEmail.text.toString()
-            var password = binding.etPassword.text.toString()
 
-            if (email.isBlank()) {
-                binding.tilEmail.error = "Please input email"
-            }
-            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                binding.tilEmail.error = "Email is invalid"
-            }
-            if (password.isBlank()){
-                binding.tilPassword.error = "Please input password"
-            }
+    fun validate() {
+        var email = binding.etEmail.text.toString()
+        var password = binding.etPassword.text.toString()
+
+        if (email.isBlank()) {
+            binding.tilEmail.error = "Please input email"
         }
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            binding.tilEmail.error = "Email is invalid"
+        }
+        if (password.isBlank()) {
+            binding.tilPassword.error = "Please input password"
+        }
+    }
 }
